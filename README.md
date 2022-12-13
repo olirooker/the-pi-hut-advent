@@ -1,4 +1,4 @@
-# The Pie Hut Advent
+# The Pi Hut Advent
 
 ### Exploring the Raspberry Pi Pico with 12 Projects from The Pi Hut
 
