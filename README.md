@@ -50,6 +50,14 @@ To do
 
 ### The [second day](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-2-let-s-get-blinky) focuses on LEDs.
 
-![Day 2 Full Circuit](day2/day-02-full-circuit.webp)
+<img src="day2/day-02-full-circuit.webp" alt="Day 2 Circuit Diagram" width="400"/>
 
-text
+<!-- ![Day 2 Full Circuit](day2/day-02-full-circuit.webp) -->
+
+- 330 ohm resistors
+- LEDs have a specific polarity, electricity can only flow in one direction. The long leg is the Anode (+) and the short leg is the Cathode (-). Current must always flow from the anode to the cathode.
+- It doesn't matter which side of the LED the resistor sits, as long as it's there limiting the flow of current for the entire circuit
+
+## Day 3 - Buttons
+
+<img src="day3/day-03-GPIO.jpg" alt="Day 3 Circuit Diagram" width="400"/>
