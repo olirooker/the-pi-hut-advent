@@ -1,6 +1,5 @@
 from machine import Pin
 import time
-import sys
 
 red = Pin(18, Pin.OUT)
 amber = Pin(19, Pin.OUT)
@@ -52,9 +51,6 @@ code_dict = {
     ')':'-.--.- '
     }
 
-count = 0
-message = input().upper()
-
 def dotOnOff():
     red.value(1)
     amber.value(1)
@@ -86,9 +82,9 @@ def textToCipher(str):
  
     return cipher
 
-print(textToCipher(message))
-
 def cipherToLights():
+    message = input().upper()
+    print(textToCipher(message))
     cipher = textToCipher(message)
     for bit in cipher:
         if bit == '.':
