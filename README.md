@@ -51,3 +51,5 @@ To do
 ### The [second day](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-2-let-s-get-blinky) focuses on LEDs.
 
 ![Day 2 Full Circuit](day2/day-02-full-circuit.webp)
+
+text
