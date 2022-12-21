@@ -4,6 +4,8 @@
 
 This repo is for me to keep track of the projects I build with the components in the [the Pi Hut Advent Calendar](https://thepihut.com/pages/advent) and to have as a reference for myself.
 
+I'll be following some of the projects in the guide but coming up with more challenging projects that use the components each day.
+
 ## Day 1 - Set up
 
 ### The [first day](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-1-getting-started) focuses on setting up and getting familiar with the Pico.
@@ -46,9 +48,7 @@ Following on from this I did check the [day 1 instructions on the Pi Hut's websi
 
 To do
 
-## Day 2 - LEDs
-
-### The [second day](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-2-let-s-get-blinky) focuses on LEDs.
+## [Day 2](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-2-let-s-get-blinky) - LEDs
 
 <img src="day2/day-02-full-circuit.webp" alt="Day 2 Circuit Diagram" width="400"/>
 
@@ -58,6 +58,25 @@ To do
 - LEDs have a specific polarity, electricity can only flow in one direction. The long leg is the Anode (+) and the short leg is the Cathode (-). Current must always flow from the anode to the cathode.
 - It doesn't matter which side of the LED the resistor sits, as long as it's there limiting the flow of current for the entire circuit
 
-## Day 3 - Buttons
+### Projects
+
+[Text to Morse code translator](https://github.com/olirooker/the-pi-hut-advent/blob/main/day2/03-morse-me.py) - Enter some text and it will be shown on the LEDs in Morse code.
+
+## [Day 3](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-3-bashing-buttons) - Buttons
 
 <img src="day3/day-03-GPIO.jpg" alt="Day 3 Circuit Diagram" width="400"/>
+
+### Pull Downs
+
+```python
+# Using pull downs
+Pin.PULL_DOWN
+# Pass as an argument in Pin() function
+redButton = Pin(3, Pin.IN, Pin.PULL_DOWN)
+```
+
+A button sends 3.3V to the GPIO pin to set it to `HIGH`. It needs to be `LOW` first or the code might not be able to detect a change / trigger randomly. A GPIO pin without a pull down can be 'floating' between 0V and 3.3V. Pulling down the pin to 0V ensures it always starts on `LOW`.
+
+### Projects
+
+[LED Memory Game](https://github.com/olirooker/the-pi-hut-advent/blob/main/day3/03-led-memory-game.py) - Randomly generate a sequence of lights and using the buttons, enter the combination back to the Pico with three difficulty levels.
