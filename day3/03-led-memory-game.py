@@ -8,6 +8,7 @@ import sys
 greenButton = Pin(13, Pin.IN, Pin.PULL_DOWN)
 amberButton = Pin(8, Pin.IN, Pin.PULL_DOWN)
 redButton = Pin(3, Pin.IN, Pin.PULL_DOWN)
+onboardLED = Pin(25, Pin.OUT)
 
 # Set up our LED names and GPIO pin numbers
 greenLed = Pin(18, Pin.OUT)
@@ -83,9 +84,11 @@ def win():
 def checkGuess(playerGuess, light, loopNum, pattern):
     if pattern[loopNum] != light:
         lose()
+        onboardLED.value(0)
         sys.exit()
     elif playerGuess == pattern:
         win()
+        onboardLED.value(0)
         sys.exit()
 
 def playGame():
@@ -117,4 +120,9 @@ def playGame():
             checkGuess(guess, 'red', i, patternToGuess)
             i += 1
 
-playGame()
+
+def main():
+    onboardLED.value(1)
+    playGame()
+
+main()
