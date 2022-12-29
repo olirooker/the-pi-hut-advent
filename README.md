@@ -127,3 +127,7 @@ A button sends 3.3V to the GPIO pin to set it to `HIGH`. It needs to be `LOW` fi
 
 - `Frequency` changes the tone (between 10 and 10000)
 - `Duty Cycle` changes the volume. The range is 0 to 65535. 10000 seems good. 0 is mute.
+
+### Projects
+
+- [Some Zelda Music](https://github.com/olirooker/the-pi-hut-advent/blob/main/day5/05-play-sounds.py)
