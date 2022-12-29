@@ -60,7 +60,7 @@ To do
 
 ### Projects
 
-[Text to Morse code translator](https://github.com/olirooker/the-pi-hut-advent/blob/main/day2/03-morse-me.py) - Enter some text and it will be shown on the LEDs in Morse code.
+- [Text to Morse code translator](https://github.com/olirooker/the-pi-hut-advent/blob/main/day2/03-morse-me.py) - Enter some text and it will be shown on the LEDs in Morse code.
 
 ---
 
@@ -81,7 +81,7 @@ A button sends 3.3V to the GPIO pin to set it to `HIGH`. It needs to be `LOW` fi
 
 ### Projects
 
-[LED Memory Game](https://github.com/olirooker/the-pi-hut-advent/blob/main/day3/03-led-memory-game.py) - Randomly generate a sequence of lights and using the buttons, enter the combination back to the Pico with three difficulty levels.
+- [LED Memory Game](https://github.com/olirooker/the-pi-hut-advent/blob/main/day3/03-led-memory-game.py) - Randomly generate a sequence of lights and using the buttons, enter the combination back to the Pico with three difficulty levels.
 
 ---
 
@@ -112,5 +112,11 @@ A button sends 3.3V to the GPIO pin to set it to `HIGH`. It needs to be `LOW` fi
 - The `duty cycle` is the percentage of the time that our LED will be ON. The higher the `duty cycle`, the longer the LED will be ON, and the brighter our LED will appear.
 - `Duty cycle` for the Pico in MicroPython can range from 0 to 65535, which matches the output of the potentiometer (0-65535) so we can use this value directly without having to manipulate it.
 - `Frequency` is the number of times per second that we will repeat the ON/OFF cycle.
+
+### Projects
+
+- Testing effects using PWN programmatically rather than with the potentiometer.
+- [Pule LEDs]()
+- [Fade LEDs]()
 
 ## [Day 5]() - Sound
