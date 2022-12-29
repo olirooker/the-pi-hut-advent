@@ -116,7 +116,7 @@ A button sends 3.3V to the GPIO pin to set it to `HIGH`. It needs to be `LOW` fi
 ### Projects
 
 - Testing effects using PWN programmatically rather than with the potentiometer.
-- [Pule LEDs]()
-- [Fade LEDs]()
+- [Pulse LEDs](https://github.com/olirooker/the-pi-hut-advent/blob/main/day4/05-pwn-pulse.py)
+- [Fade LEDs](https://github.com/olirooker/the-pi-hut-advent/blob/main/day4/06-pwn-fade.py)
 
 ## [Day 5]() - Sound
