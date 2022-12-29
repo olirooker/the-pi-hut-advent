@@ -119,4 +119,11 @@ A button sends 3.3V to the GPIO pin to set it to `HIGH`. It needs to be `LOW` fi
 - [Pulse LEDs](https://github.com/olirooker/the-pi-hut-advent/blob/main/day4/05-pwn-pulse.py)
 - [Fade LEDs](https://github.com/olirooker/the-pi-hut-advent/blob/main/day4/06-pwn-fade.py)
 
-## [Day 5]() - Sound
+---
+
+## [Day 5](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-5-hear-my-code) - Sound
+
+### PWM Frequency and Duty Cycle with Buzzers
+
+- `Frequency` changes the tone (between 10 and 10000)
+- `Duty Cycle` changes the volume. The range is 0 to 65535. 10000 seems good. 0 is mute.
