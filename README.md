@@ -48,11 +48,11 @@ Following on from this I did check the [day 1 instructions on the Pi Hut's websi
 
 To do
 
+---
+
 ## [Day 2](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-2-let-s-get-blinky) - LEDs
 
 <img src="day2/day-02-full-circuit.webp" alt="Day 2 Circuit Diagram" width="400"/>
-
-<!-- ![Day 2 Full Circuit](day2/day-02-full-circuit.webp) -->
 
 - 330 ohm resistors
 - LEDs have a specific polarity, electricity can only flow in one direction. The long leg is the Anode (+) and the short leg is the Cathode (-). Current must always flow from the anode to the cathode.
@@ -61,6 +61,8 @@ To do
 ### Projects
 
 [Text to Morse code translator](https://github.com/olirooker/the-pi-hut-advent/blob/main/day2/03-morse-me.py) - Enter some text and it will be shown on the LEDs in Morse code.
+
+---
 
 ## [Day 3](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-3-bashing-buttons) - Buttons
 
@@ -80,3 +82,35 @@ A button sends 3.3V to the GPIO pin to set it to `HIGH`. It needs to be `LOW` fi
 ### Projects
 
 [LED Memory Game](https://github.com/olirooker/the-pi-hut-advent/blob/main/day3/03-led-memory-game.py) - Randomly generate a sequence of lights and using the buttons, enter the combination back to the Pico with three difficulty levels.
+
+---
+
+## [Day 4](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-4-amazing-analogue) - Analogue Inputs with a Potentiometer
+
+- Digital inputs are strictly 1 and 0 (HIGH/LOW, ON/OFF). Analogue inputs have a wide range of numbers to represent values.
+- The potentiometer can pass these analogue signals in the form of voltage to the Pico.
+- A potentiometer is a variable resistor.
+- The potentiometer here is a 10K potentiometer, it can be set anywhere from 0 ohms to 10,000 ohms (resistance is measured in ohms).
+
+### Circuit
+
+<img src="day4/day-4-complete.jpg" alt="Day 4 Circuit Diagram" width="400"/>
+
+### ADC Pins (Analogue to Digital Converter)
+
+- An ADC is an Analogue to Digital Converter. The ADC pins on our Pico have the special ability of being able to convert an analogue input into a digital form we can use. We have to import ADC in our code to use this feature.
+- `from machine import ADC` to use.
+- GPIO26, 27 and 28 (physical pins 31,32 and 34) - [a map of Pico pins here](https://cdn.shopify.com/s/files/1/0176/3274/files/Pico-R3-A4-Pinout_f22e6644-b3e4-4997-a192-961c55fc8cae.pdf?v=1664490511).
+- The Pico's ADC pins are 12-bit, however MicroPython scales this to a 16-bit range which is 0-65535.
+- Invoke `.read_u16()` to scale to 16-bit.
+
+### PWM (Pulse Width Modulation)
+
+- A type of digital signal where we, over a set period of time, decide how long the signal is ON (HIGH) and how long it's OFF (LOW).
+- This can create a fading effect for LEDs but also is used for things like servos.
+- Our code needs some values from us to enable it to run PWM for us - `Duty Cycle` and `Frequency`.
+- The `duty cycle` is the percentage of the time that our LED will be ON. The higher the `duty cycle`, the longer the LED will be ON, and the brighter our LED will appear.
+- `Duty cycle` for the Pico in MicroPython can range from 0 to 65535, which matches the output of the potentiometer (0-65535) so we can use this value directly without having to manipulate it.
+- `Frequency` is the number of times per second that we will repeat the ON/OFF cycle.
+
+## [Day 5]() - Sound
