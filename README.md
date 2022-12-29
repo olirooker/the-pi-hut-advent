@@ -96,6 +96,8 @@ A button sends 3.3V to the GPIO pin to set it to `HIGH`. It needs to be `LOW` fi
 
 <img src="day4/day-4-complete.jpg" alt="Day 4 Circuit Diagram" width="400"/>
 
+- The right pin needs to connect to the 3V3(OUT) pin (physical pin 36), the middle pin to GPIO 27 (physical pin 32) and the left pin to GND (use the blue lane as we already have that connected to GND for the LEDs).
+
 ### ADC Pins (Analogue to Digital Converter)
 
 - An ADC is an Analogue to Digital Converter. The ADC pins on our Pico have the special ability of being able to convert an analogue input into a digital form we can use. We have to import ADC in our code to use this feature.
@@ -130,4 +132,4 @@ A button sends 3.3V to the GPIO pin to set it to `HIGH`. It needs to be `LOW` fi
 
 ### Projects
 
-- [Some Zelda Music](https://github.com/olirooker/the-pi-hut-advent/blob/main/day5/05-play-sounds.py)
+- [Some Zelda Sounds](https://github.com/olirooker/the-pi-hut-advent/blob/main/day5/05-play-sounds.py)
