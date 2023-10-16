@@ -125,6 +125,10 @@ A button sends 3.3V to the GPIO pin to set it to `HIGH`. It needs to be `LOW` fi
 
 ## [Day 5](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-5-hear-my-code) - Sound
 
+### Circuit
+
+Red into pin 17, black into the GND pin at 18.
+
 ### PWM Frequency and Duty Cycle with Buzzers
 
 - `Frequency` changes the tone (between 10 and 10000)
@@ -133,3 +137,22 @@ A button sends 3.3V to the GPIO pin to set it to `HIGH`. It needs to be `LOW` fi
 ### Projects
 
 - [Some Zelda Sounds](https://github.com/olirooker/the-pi-hut-advent/blob/main/day5/05-play-sounds.py)
+
+## [Day 6](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-6-looking-for-light) - Analogue readings from a light sensor
+
+### In the box
+
+- 1x Photo Transistor
+- 1x 10k Resistor
+- 3x Male to male jumper wires
+
+### Circuit
+
+<img src="day6/day-6.jpg" alt="Day 6 Circuit Diagram" width="400"/>
+
+Now we need to add three wires and the resistor:
+
+- Connect the right (short) leg to the 3.3V pin (physical pin 36)
+- Connect the left (long) leg to GPIO 26 (physical pin 31)
+- Add the resistor to connect the left leg over to another empty unused lane on your breadboard
+- Connect the other end of the resistor to a GND pin on your Pico (we're using the blue lane as it's already connected to GND for our LEDs)
