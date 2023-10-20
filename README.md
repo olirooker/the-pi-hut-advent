@@ -46,7 +46,9 @@ Following on from this I did check the [day 1 instructions on the Pi Hut's websi
 
 ### Setting up with VS Code
 
-To do
+- Install [MicroPico](https://marketplace.visualstudio.com/items?itemName=paulober.pico-w-go) extension.
+- In project folder open the command pallet using `sft cmd p`.
+- Run `MicroPico > Configure Project`.
 
 ---
 
