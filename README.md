@@ -158,3 +158,18 @@ Now we need to add three wires and the resistor:
 - Connect the left (long) leg to GPIO 26 (physical pin 31)
 - Add the resistor to connect the left leg over to another empty unused lane on your breadboard
 - Connect the other end of the resistor to a GND pin on your Pico (we're using the blue lane as it's already connected to GND for our LEDs)
+
+## [Day 7](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-7-monitoring-motion) - Monitoring Motion
+
+### In the box
+
+- 1x Mini PIR (Passive Infra-Red) Sensor - detects movement via heat.
+- 3x Male to male jumper wires
+
+### Circuit
+
+Keep the same from day 5 with the below on the breakout board.
+
+<img src="day7/day-7-full-circuit.webp" alt="Day 6 Circuit Diagram" width="400"/>
+</br>
+<img src="day7/day-7-pir-orientation.webp" alt="Day 7 PIR Orientation" width="400"/>
