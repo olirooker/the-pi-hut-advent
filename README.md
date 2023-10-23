@@ -170,6 +170,36 @@ Now we need to add three wires and the resistor:
 
 Keep the same from day 5 with the below on the breakout board.
 
-<img src="day7/day-7-full-circuit.webp" alt="Day 6 Circuit Diagram" width="400"/>
+<img src="day7/day-7-full-circuit.webp" alt="Day 7 Circuit Diagram" width="400"/>
 </br>
 <img src="day7/day-7-pir-orientation.webp" alt="Day 7 PIR Orientation" width="400"/>
+
+## [Day 8](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-7-monitoring-motion) - Temperature
+
+### In the box
+
+- 1x Custom waterproof temperature sensor with male jumper wires
+- 1x 4.7k resistor
+
+The metal tip houses the sensor inside (specifically a DS18B20-compatible 1-wire sensor). 1-wire is a serial communication protocol for devices to communicate to a controller. 1-wire allows a special device like our temperature sensor to talk to a controller, like our Pico, enabling it to send data to the Pico to be used in a program.
+
+Despite it's name, you actually need at least two wires to use 1-wire devices, and in some examples (like our sensor) we're using three wires. The name is related to the data communication - you only need one wire to allow the devices to talk to each other both ways.
+
+### Circuit
+
+Same as day 5 with the below on the breakout board.
+
+<img src="day8/day-8.jpg" alt="Day 8 Circuit Diagram" width="400"/>
+
+### 1-wire Code
+
+Specify we're using the `DS18B20` sensor using:
+```py
+sensor = ds18x20.DS18X20(onewire.OneWire(SensorPin))
+```
+
+We also need to scan for 1-wire devices on the GPIO pin we have set up. 1-wire devices such as our sensor have a unique registration number in their read-only memory (rom). The following line in our code below scans for sensors (roms) connected to our pin:
+
+```py
+roms = sensor.scan()
+```
