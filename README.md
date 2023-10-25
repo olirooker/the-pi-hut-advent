@@ -203,3 +203,19 @@ We also need to scan for 1-wire devices on the GPIO pin we have set up. 1-wire d
 ```py
 roms = sensor.scan()
 ```
+
+## [Day 9](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-9-full-tilt) - Tilt Switches
+
+### In the box
+
+- 1x Tilt sensor/switch - `HIGH` when tilted and `LOW` when not.
+- 2x Male to male jumper wires
+- 2x Male to female jumper wires
+
+### Circuit
+
+Same as day 5 with the below on the breakout board.
+
+<img src="day9/day-9.webp" alt="Day 9 Circuit Diagram" width="400"/>
+
+## [Day 10](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-10-breaking-beams) - Break Beam Sensor
