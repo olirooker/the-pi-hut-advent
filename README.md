@@ -219,3 +219,23 @@ Same as day 5 with the below on the breakout board.
 <img src="day9/day-9.webp" alt="Day 9 Circuit Diagram" width="400"/>
 
 ## [Day 10](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-10-breaking-beams) - Break Beam Sensor
+
+### In the box
+
+- 1x Custom Break Beam Sensor (emitter and receiver) with male jumper wire ends
+  - Emitter has two wires
+  - Receiver has three wires
+- 1x 10k resistor
+
+### Break beam sensor
+
+- When the beam is broken (the receiver doesn't detect a signal) sends `LOW` to the pin.
+- When the beam is intact sends `HIGH` to the pin.
+- Watch for `LOW` signals.
+
+### Circuit
+
+Same as day 5 with the below on the breakout board.
+
+<img src="day10/day-10.jpg" alt="Day 10 Circuit Diagram" width="400"/>
+
