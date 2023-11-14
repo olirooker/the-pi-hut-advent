@@ -1,2 +1,4 @@
 .DS_Store
 .micropico
+.env
+env.txt

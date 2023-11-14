@@ -239,3 +239,23 @@ Same as day 5 with the below on the breakout board.
 
 <img src="day10/day-10.jpg" alt="Day 10 Circuit Diagram" width="400"/>
 
+## [Day 11](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-11-omg-oled) - OLED Screen
+
+### In the box
+
+- 1x Pre-soldered 0.96" IC2 OLED I2C display (128x32)
+
+I2C, sometimes referred to as IIC, stands for Inter-Integrated Circuit. It's another type of communication protocol which allows multiple I2C devices to communicate to a controller.
+
+I2C requires just two wires to communicate (along with 3.3V and GND for our display) and has benefits over some other communication options.
+
+### Circuit
+
+<img src="day11/day-11-main.webp" alt="Day 11 Circuit Diagram Part 1" width="400"/>
+<img src="day11/day-11-breakout.jpg" alt="Day 11 Circuit Diagram Part 2" width="400"/>
+
+> Need to install the `micropython-ssd1306` library.
+
+### Projects
+
+- [Display Current Weather](https://github.com/olirooker/the-pi-hut-advent/blob/main/day11/06-weather.py) - Using the OpenWeatherMap API.
