@@ -259,3 +259,19 @@ I2C requires just two wires to communicate (along with 3.3V and GND for our disp
 ### Projects
 
 - [Display Current Weather](https://github.com/olirooker/the-pi-hut-advent/blob/main/day11/06-weather.py) - Using the OpenWeatherMap API. Won't work with the Pico in box.
+
+## [Day 12](https://thepihut.com/blogs/raspberry-pi-tutorials/maker-advent-calendar-day-12-rgb-led-strip) - LED Strip
+
+### In the box
+
+- Addressable LED Strip
+
+### Circuit
+
+<img src="day12/day-12-main.webp" alt="Day 12 Circuit Diagram" width="400"/>
+
+
+### Projects
+
+- [Rainbow](https://github.com/olirooker/the-pi-hut-advent/blob/main/day12/rainbow.py) - Rainbow effect.
+- [Christmas](https://github.com/olirooker/the-pi-hut-advent/blob/main/day12/christmas.py) - Christmas lights.
