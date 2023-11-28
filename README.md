@@ -258,4 +258,4 @@ I2C requires just two wires to communicate (along with 3.3V and GND for our disp
 
 ### Projects
 
-- [Display Current Weather](https://github.com/olirooker/the-pi-hut-advent/blob/main/day11/06-weather.py) - Using the OpenWeatherMap API.
+- [Display Current Weather](https://github.com/olirooker/the-pi-hut-advent/blob/main/day11/06-weather.py) - Using the OpenWeatherMap API. Won't work with the Pico in box.
